@@ -57,6 +57,26 @@
 
     private void GenerateFizzBuzzResults()
     {
-        
+        fizzBuzzResults.Clear();
+
+        for (int i = 1; i <= fizzBuzz.StopValue; i++)
+        {
+            if (i % fizzBuzz.FizzValue == 0 && i % fizzBuzz.BuzzValue == 0)
+            {
+                fizzBuzzResults.Add("FizzBuzz");
+            }
+            else if (i % fizzBuzz.FizzValue == 0)
+            {
+                fizzBuzzResults.Add("Fizz");
+            }
+            else if (i % fizzBuzz.BuzzValue == 0)
+            {
+                fizzBuzzResults.Add("Buzz");
+            }
+            else
+            {
+                fizzBuzzResults.Add(i.ToString());
+            }
+        }
     }
 }
