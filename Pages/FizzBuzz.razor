@@ -49,6 +49,22 @@
             </div>
         </div>
     </EditForm>
+
+    @if (fizzBuzzResults.Count > 0)
+    {
+        <h4 class="mt-5 border-bottom">
+            FizzBuzz Results:
+        </h4>
+
+        <div class="row row-cols-5">
+            @foreach (var result in fizzBuzzResults)
+            {
+                <div class="col">
+                    @result
+                </div>
+            }
+        </div>
+    }
 </div>
 
 @code {
