@@ -59,9 +59,7 @@
         <div class="row row-cols-5">
             @foreach (var result in fizzBuzzResults)
             {
-                <div class="col">
-                    @result
-                </div>
+               <FizzBuzzItem FizzBuzzValue="@result" />
             }
         </div>
     }

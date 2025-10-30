@@ -1,0 +1,8 @@
+﻿<div class="col text-center border border-light p-1">
+    @FizzBuzzValue
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public string FizzBuzzValue { get; set; } = string.Empty;
+}
